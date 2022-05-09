@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- form for inputs properties of product -->
+      <div class="form">
+        <div>
+          <h1>add product</h1>
+        </div>
+        <div>
+          <input type="text" id="nameProduct" placeholder="name product" />
+        </div>
+        <div>
+          <input type="number" id="priceProduct" placeholder="price product" />
+        </div>
+        <div>
+          <select id="category">
+            <option value="Drinks">Drinks</option>
+            <option value="Meat">Meat</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Basic">Basic</option>
+          </select>
+        </div>
+
+        <div>
+          <input id="image" placeholder="link images" />
+        </div>
+        <div class="btn-add">
+          <button onclick="firstRun()">Add product</button>
+        </div>
+      </div>
+      <!-- table of lists of products -->
+      <div>
+        <table>
+          <thead>
+            <th>name of product</th>
+            <th>price</th>
+            <th>category</th>
+            <th>images</th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
